@@ -51,7 +51,7 @@ const container = document.querySelector('.container');
             const img = document.createElement('img');
             img.src = './img/logo2.png';
             container.appendChild(img);
-            img.classList = 'logo2 animate__animated animate__fadeInDown';
+            img.classList = 'logo2 animate__animated animate__fadeInDown animate__delay-1s';
 
             
         }

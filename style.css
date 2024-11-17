@@ -1,3 +1,4 @@
+ /* This changes all the animations globally */
 @font-face {
     font-family: Inter;
     src: url('./font/Inter/Inter_18pt-Light.ttf');
@@ -84,7 +85,7 @@ footer{
 }
 @keyframes fadeInDown {
     0% {
-        opacity: 0.3;
+        opacity: 0;
         -webkit-transform: translate3d(0,-20%,0);
         transform: translate3d(0,-20%,0);
     }
@@ -113,3 +114,4 @@ footer{
         object-fit: cover;
     }
 }
+
