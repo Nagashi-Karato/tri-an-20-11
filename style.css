@@ -41,6 +41,7 @@ main{
     margin: 5vh auto 0px;
     object-fit: cover;
     object-position: center center;
+    --animate-delay: 0.5s;
 }
 .logo2{
     width: 310px;
@@ -49,6 +50,7 @@ main{
     margin: 5vh auto 0px;
     object-fit: cover;
     object-position: center center;
+    --animate-delay: 0.5s;
 }
 .down-arrow{
     width: 40px;
