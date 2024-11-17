@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Inter;
+    src: url('./font/Inter/Inter_18pt-Light.ttf');
+}
+html, body{
+    margin: 0px;
+    font-family: Inter !important;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    background: url(./img/Nen1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: block;
+    width: fit-content;
+    height: 100vh;
+}
+.content{
+    display: block;
+    text-align: center;
+    max-height: fit-content;
+}
+.giftbox{
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 0 20%;
+    cursor: pointer;
+}
+.logo{
+    max-width: 100%;
+    width: 500px;
+    display: block;
+    margin: 5vh auto 0px;
+    object-fit: cover;
+    object-position: center center;
+}
+.logo2{
+    width: 310px;
+    max-width: 100%;
+    display: block;
+    margin: 5vh auto 0px;
+    object-fit: cover;
+    object-position: center center;
+}
+.down-arrow{
+    width: 40px;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    z-index: 1002;
+}
+.footer-img{
+    display: block;
+    width: 100%;
+}
+.circle-transition {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1s ease-in-out;
+    z-index: 1000;
+    pointer-events: none;
+    border: 0px solid black;
+}
+
+.circle-expand {
+    transform: translate(-50%, -50%) scale(200);
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0.3;
+        -webkit-transform: translate3d(0,-20%,0);
+        transform: translate3d(0,-20%,0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .giftbox{
+        width: 200px;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    .footer-img{
+        height: 120px;
+        /* width: 200px; */
+        object-fit: cover;
+    }
+}
