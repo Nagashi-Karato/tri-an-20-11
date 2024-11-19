@@ -158,24 +158,38 @@ footer{
         transform: translateZ(0)
     }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1368px) {
+    .logo{
+        width: 400px;
+    }
+    .logo2{
+        width: 210px;
+    }
+    .giftbox{
+        width: 100px;
+    }
+    .thiep{
+        margin: 5% auto;
+    }
     h1{
         font-size: 2rem;
     }
     p{
         font-size: 0.9rem;
     }
-    .giftbox{
-        width: 200px;
-        margin: 0 auto;
-        max-width: 90%;
-    }
     .footer-img{
-        height: 120px;
-        /* width: 200px; */
+        height: 60px;
         object-fit: cover;
     }
 }
+@media screen and (max-width: 768px) {
+    .giftbox{
+        margin: 0 auto;
+        max-width: 90%;
+    }
+}
+
 
 @media screen and (max-width: 400px) {
     .thiep .p1 {
